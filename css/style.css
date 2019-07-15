@@ -1,0 +1,130 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 15px; 
+    line-height: 1.5; 
+    padding: 0; 
+    margin: 0; 
+    background-image: url("../img/papyrus.png");
+}
+
+/* makes each link grey and removes underline */
+header a{
+    color: #323232; 
+    text-decoration: none; 
+    position: relative; 
+}
+/* makes each link turn blue when user hovers and indicates which page they're on */
+header a:hover, header .current a{
+    color: #00bbe0;
+}
+/* makes underline appear when you hover over the navigation bar */
+header a::before {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    transform: scaleX(0);
+    height: 3px; 
+    bottom: -4px;
+    left: 0;  
+    background-color: #f9cb40; 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out; 
+}
+header a:hover::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+/* pads the list on top and aligns navigation bar to the right*/
+header .navigation_bar {
+    text-align: right; 
+    padding: 15px; 
+    margin: 0; 
+}
+/* makes each list item listed horizontally rather than vertically with space in between them and removes default bullet points*/
+header li {
+    display: inline;
+    padding-right: 50px; 
+    list-style-type: none;
+}
+/* makes the last_child less space from the end of the screen on the right */
+header li:last-child {
+    padding-right: 25px; 
+}
+
+
+/* makes space for container on top and makes the layout horizontal with 2 elements */
+.main_container {
+    margin-top: -16px; 
+    display: flex;
+    align-items: flex-end;
+}
+/* makes space on top and right of about paragraph aligning it right and setting font smaller*/
+.main_container .about {
+    margin-top: 50px; 
+    padding-right: 35px; 
+    text-align: right;
+    font-size: 14px; 
+}
+/* sets size and weight of name */
+#name {
+    font-size: 90px; 
+    font-weight: bold; 
+}
+/* causes lastname to be closer to firstname above */
+#lastname {
+    margin-top: -50px; 
+    margin-bottom: -10px; 
+}
+/* marks each bolded word in paragraph as blue */
+.main_container strong {
+    color: #00bbe0; 
+}
+.main_container #labels p{
+    color: #323232; 
+    font-weight: bolder;
+}
+
+/* creates border for connect section and moves to touch about section */
+.social_media {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    border-top: 4px solid #f9cb40;
+    border-bottom: 4px solid #f9cb40;
+    margin-top: -5px;
+ }
+ /* centers connect header in the social media bar and makes it blue and a little larger */
+ .social_media h2 {
+    margin: 3px 0 0 0; 
+    padding: 0 20px 0 20px; 
+    color: #00bbe0;
+    font-size: 25px;
+ }
+ /* puts icons in line and removes bullet points and puts space between them */
+ .social_media li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 140px;
+ }
+ .social_media li:last-child {
+    padding-right: 60px; 
+ }
+
+
+/* the copyright statement at the bottom of page */
+footer {
+    background: #00bbe0;
+    padding: 50px 0 10px 0;
+    text-align: center;
+    color: #fafafa;
+ }
+ 
+ /* makes the website display dynamic as the size of the window is changed */
+ @media (max-width: 940px) {
+    .social_media {
+        flex-direction: column;
+        height: 115px; 
+    }
+ }
+ 
+ 
