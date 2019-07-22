@@ -6,6 +6,19 @@ body{
     margin: 0; 
     background-image: url("../img/papyrus.png");
 }
+button {
+    font-size: 16px; 
+    background-color: #f9cb40; 
+    color: white; 
+    border: none; 
+    text-align: center; 
+    padding: 8px 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+button:hover {
+    background-color: #e5ae07;
+}
 
 /* makes each link grey and removes underline */
 header a{
@@ -39,8 +52,12 @@ header .navigation_bar {
     text-align: right; 
     padding: 15px; 
     margin: 0; 
-    background: white; 
-    border-bottom: #323232 3px solid; 
+}
+header .navigation {
+    text-align: right; 
+    padding: 15px; 
+    margin: 0; 
+    border-bottom: 3px solid #323232; 
 }
 /* makes each list item listed horizontally rather than vertically with space in between them and removes default bullet points*/
 header li {
@@ -112,29 +129,32 @@ header li:last-child {
  }
 
 
- .resume_container {
+.resume_container {
     display: flex; 
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
+    background: white; 
  }
 .resume_container iframe {
-    padding-top: 50px; 
+    padding-top: 60px; 
     border: none; 
 }
 #download_button {
-    margin: 20px; 
-    font-size: 16px; 
-    background-color: #f9cb40; 
-    color: white; 
-    border: none; 
-    text-align: center; 
-    padding: 8px 15px; 
-    border-radius: 5px; 
-    font-weight: bold; 
+    margin: 30px; 
 }
-#download_button:hover {
-    background-color: #e5ae07; 
+
+.grid_container {
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px; 
+    grid-row-gap: 40px; 
+    padding: 60px 0; 
+    background: white; 
+    justify-content: center; 
+}
+.grid_item img {
+    border: 3px solid #323232; 
 }
 
 
@@ -147,13 +167,16 @@ footer {
  }
  
  /* makes the website display dynamic as the size of the window is changed */
- @media (max-width: 940px) {
+ @media (max-width: 1050px) {
     .social_media {
         flex-direction: column;
         height: 115px; 
     }
     .social_media li {
         padding-right: 80px; 
+    }
+    .grid_container {
+        grid-template-columns: auto; 
     }
  }
 

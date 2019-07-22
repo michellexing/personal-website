@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michelle Xing">
     <title>Michelle Xing | My Work</title>
-    <link rel = "stylesheet" href = "./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 <body>
     <header>
-        <ul class="navigation_bar">
+        <ul class="navigation">
             <li>
-                <a href="home.html"><strong>home</strong></a>
+                <a href="index.html"><strong>home</strong></a>
             </li>
             <li class="current"> 
                 <a href="portfolio.html"><strong>portfolio</strong></a>
@@ -27,36 +28,35 @@
         </ul>
     </header>
 
-    <section class="main_container">
-            <div id="profile_pic">
-                    <img src="./img/profile_pic.png" height="500" width="500">
-                </div>
-            <div class="about">
-                <div id="name">
-                    <div id="firstname">Michelle</div>
-                    <div id="lastname">Xing</div>
-                </div>
-                <p> Originally from Long Island, NY, <strong>Michelle Xing</strong> is a currently sophomore at Stanford University considering majoring in <strong>Computer Science</strong>. Her major interests healthcare, education and the environment. Michelle is working at a HCI lab at Stanford this summer researching <em>Interventions Enhanced Identity Masking in Online Chat Collaboration Platforms to Prevent Team Fracture</em>. She has also conducted independent research in heavy metal remediation at Stony Brook University for which she has been named a Siemens Semifinalist, Regeneron STS Scholar, 4th place in the Environmental Engineering category at ISEF, and runner-up for the national Stockholm Junior Water Prize Competition. One of the proudest things she has ever done is removing 500 lbs of marine debris from the Olympic National Park coast with her <strong>Student Conservation Association</strong> crew. On campus, she is the Diversity Development Chair for the <strong>Stanford Society of Women Engineers</strong>, Social Chair for <strong>Cardinal Calypso</strong>, and a trip leader for the <strong>Stanford Pre-Orientation Trip</strong>. 
-                <br/>
-                <div id="labels">
-                    <p>Programmer - Designer - Musician - Explorer</p>
-                </div>
-            </div>
-    </section>
-    
-    <section class="social_media">
-        <div id="connect">
-            <h2>CONNECT</h2>
+    <section class="grid_container">
+        <div class="grid_item" id="project1">
+            <img src="./img/personalwebsite.png" height=300 width=480>
+            <h3>Personal Website</h3>
+            <button id="project1_button"><i class="fab fa-github"></i> Github</button>
         </div>
-        <ul id="icons">
-            <li><a href="https://www.facebook.com/michelle.xing.923"><img src="./img/facebook.png" height="55" width="95"></a></li>
-            <li><a href = "https://www.instagram.com/michelle.xing/"><img src="./img/instagram.png" height="55" width="55"></a></li>
-            <li><a href="https://www.linkedin.com/in/michellexing/"><img src="./img/linkedin.png" height="50" width="85"></a></li>
-        </ul>
+        <div class="grid_item">
+            <img src="./img/project_filler.png" height=300 width=480 id="project2">
+            <h3>Project</h3>
+            <button id="project2_button"><i class="fab fa-github"></i> Github</button>
+        </div>
+        <div class="grid_item">
+            <img src="./img/project_filler.png" height=300 width=480 id="project3">
+            <h3>Project</h3>
+            <button id="project3_button"><i class="fab fa-github"></i> Github</button>
+        </div>
+        <div class="grid_item">
+            <img src="./img/project_filler.png" height=300 width=480 id="project4">
+            <h3>Project</h3>
+            <button id="project4_button"><i class="fab fa-github"></i> Github</button>
+        </div>
+    </div>
     </section>
+
 
     <footer>
             <p>Copyright &copy; 2019 Michelle Xing. All Rights Reserved.</p>
     </footer>
+
+    <script src="./javascript/main.js"></script>
 </body>
 </html>
