@@ -128,7 +128,7 @@ header li:last-child {
     padding-right: 45px; 
  }
 
-
+/* resume page */
 .resume_container {
     display: flex; 
     justify-content: center; 
@@ -144,6 +144,7 @@ header li:last-child {
     margin: 30px; 
 }
 
+/* portfolio page */
 .grid_container {
     display: grid; 
     grid-template-columns: auto auto;
@@ -160,7 +161,7 @@ header li:last-child {
     box-shadow: 12px 12px 12px #a8a8a8; 
 }
 
-
+/* contact page */
 .showcase {
     padding: 0; 
     height: 720px;  
@@ -175,7 +176,7 @@ header li:last-child {
     overflow: hidden; 
     opacity: 0.8; 
     min-width: 400px; 
-    animation: fade_in 3s; 
+    animation: fade_in 2s; 
     animation-fill-mode: both; 
 }
 @keyframes fade_in {
