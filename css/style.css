@@ -154,7 +154,48 @@ header li:last-child {
     justify-content: center; 
 }
 .grid_item img {
-    border: 3px solid #323232; 
+    box-shadow: 10px 10px 10px lightgrey; 
+}
+.grid_item img:hover {
+    box-shadow: 12px 12px 12px #a8a8a8; 
+}
+
+
+.showcase {
+    padding: 0; 
+    height: 720px;  
+    background: url('../img/showcase.jpg'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    text-align: center; 
+}
+.contact_container { 
+    margin: 0 30%; 
+    overflow: hidden; 
+    opacity: 0.8; 
+    min-width: 400px; 
+    animation: fade_in 3s; 
+    animation-fill-mode: both; 
+}
+@keyframes fade_in {
+    from {background-color: none;}
+    to {background-color: white;}
+}
+.showcase h1 {
+    padding-top: 80px;
+    font-size: 80px;
+    font-weight: bold; 
+    color: #00003f; 
+}
+.showcase h3 {
+    padding-bottom: 15px; 
+    color: #00003f; 
+    font-size: 18px; 
+}
+.showcase #personal_info {
+    padding: 0; 
+    margin: 0; 
 }
 
 
